@@ -35,10 +35,7 @@ requests = "^2.28.2"
 loguru = "^0.6.0"
 fastapi-utils = "^0.2.1"
 
-
-
-
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "~7.2.0"
 pytest-cov = "~4.0.0"
 pytest-asyncio = "~0.20.3"
@@ -50,9 +47,11 @@ flake8-docstrings = "~1.6.0"
 flake8-import-order = "~0.18.1"
 flake8-todo = "^0.7"
 black = "~22.8.0"
-Sphinx = "~5.3.0"
-Pallets-Sphinx-Themes = "~2.0.2"
+sphinx-material = {git = "https://github.com/bashtage/sphinx-material.git"}
+pallets-sphinx-themes = "^2.0.3"
+sphinx = "^5.3.0"
 myst-parser = "~0.18.1"
+pre-commit = "^3.2.0"
 
 [tool.poetry.scripts]
 typeform = 'typeform.cli:cli'
